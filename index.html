@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Bear Ninja Cowboy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bnc.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="headrow">
+            <div class="col-xs-12 col-sm-12 col-md-6 offset=md-1 col-lg-8 offset-lg-2">
+                <h1>Ninja-Cowboy-Dragon</h1>
+                <h4>Welcome to Rock-Paper-Scissors with a twist, here's how it works:</h4>
+                <h4>Cowboy Conquers Dragon</h4>
+                <h4>Dragon Conquers Ninja</h4>
+                <h4>Ninja Conquers Cowboy</h4>
+                <div id="playerInfo"></div>
+                <div id="playerTurn"></div>
+            </div>
+      </div>
+      <div class="contentrow" id="playingArea">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+                <div id="player1">
+                    <span id="p1name">Player 1 Name</span>
+                    <div id="p1choices"></div>
+                    <div id="p1stats"></div>
+                </div>
+                <div id="results"></div>
+                <div id="player2">
+                    <span id="p2name">Player 2 Name</span>
+                    <div id="p2choices"></div>
+                    <div id="p2stats"></div>
+                </div>
+            </div>
+      </div>
+      <div class="contentrow" id="buttons">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-2">
+                <button class="bn" onclick="" value=""><i class="fas fa-user-ninja"></i></button>
+                <button class="bn" onclick="" value=""><i class="fas fa-hat-cowboy-side"></i></button>
+                <button class="bn" onclick="" value=""><i class="fas fa-dragon"></i></button>
+            </div>
+      </div>
+      <div class="challengerow">
+            <div class="col-xs-12 col-sm-12 col-md-10 offset=md-1 col-lg-10 offset-lg-4">
+                    <div id="chatbox"></div>
+                    <form id="messageBar">
+                        <input id="messageBox" type="text" />
+                        <button id="taunt" type="submit">Taunt</button>
+                    </form>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://kit.fontawesome.com/67a153827f.js" crossorigin="anonymous"></script>
+    <script src="bnc.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
