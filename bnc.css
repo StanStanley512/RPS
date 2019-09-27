@@ -1,0 +1,118 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Days One', sans-serif;
+    background-image: url(https://s1.1zoom.me/b5050/469/Dragons_Battles_Horses_447301_2560x1440.jpg);
+    background-size: cover;
+}
+.headrow{
+    width: 100%;
+    height: 15%;
+    padding-top: 25px;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+}
+#playerInfo, #playerTurn {
+	margin: 15px auto;
+	text-align: center;
+}
+#p1name, #p2name {
+	position: relative;
+	width: 65%;
+	margin: auto;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+}
+.contentrow{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+#player1, #results, #player2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 300px;
+	width: 33%;
+	border: 2px solid black;
+	margin: 26px;
+	text-align: center;
+	position: relative;
+}
+#p1choices, #p2choices {
+	min-height: 60%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#score-container{
+    margin-top: 50px;
+    font-size: 24px;
+}
+#score{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+#p1choices div:hover, #p2choices div:hover {
+	cursor: pointer;
+	background-color: white;
+}
+#playerName {
+	width: 150px;
+	margin-right: 5px;
+}
+#chatbox {
+	width: 90%;
+	min-height: 150px;
+	border: 1px solid black;
+	margin: auto;
+	overflow-y: auto;
+}
+#messageBar {
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	opacity: 0.7;
+}
+#messageBox {
+	width: 100%;
+}
+#taunt {
+	margin-top: 5px;
+	float: right;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.bn{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 50%;
+    color: navy;
+    font-size: 40px;
+    background-color: white;
+}
+.challengerow{
+    top: 43%;
+    left: 50%;
+    width: 540px;
+    height: 40%;
+    display: inline-block;
+}
+
+#result{
+    width: 25%;
+}
