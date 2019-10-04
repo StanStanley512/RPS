@@ -1,62 +1,88 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Bear Ninja Cowboy</title>
+    <title>Ninja Cowboy Dragon</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="bnc.css">
-    <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
+    <!-- CSS reset sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+    <!-- Our Own CSS File -->
+    <link rel="stylesheet" href="bnc2.css">
+    
+    <!-- Firebase Link -->
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    
   </head>
   <body>
-      <div class="headrow">
+    <body>
+        <div class="headrow">
             <div class="col-xs-12 col-sm-12 col-md-6 offset=md-1 col-lg-8 offset-lg-2">
                 <h1>Ninja-Cowboy-Dragon</h1>
                 <h4>Welcome to Rock-Paper-Scissors with a twist, here's how it works:</h4>
                 <h4>Cowboy Conquers Dragon</h4>
                 <h4>Dragon Conquers Ninja</h4>
                 <h4>Ninja Conquers Cowboy</h4>
-                <div id="playerInfo"></div>
-                <div id="playerTurn"></div>
+            
+    <div class="textrow">
+        <div class="col-xs-12 col-sm-12 col-md-6 offset=md-1 col-lg-8 offset-lg-2">
+            <div id="battlefield"><input id="username" placeholder="Name"/>
+                <button id="start">Start</button>
             </div>
-      </div>
-      <div class="contentrow" id="playingArea">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
-                <div id="player1">
-                    <span id="p1name">Player 1 Name</span>
-                    <div id="p1choices"></div>
-                    <div id="p1stats"></div>
-                </div>
-                <div id="results"></div>
-                <div id="player2">
-                    <span id="p2name">Player 2 Name</span>
-                    <div id="p2choices"></div>
-                    <div id="p2stats"></div>
-                </div>
+            <div id="current-turn"></div>
+        </div>
+    </div>
+            
+    <div id="game-div">
+    <div class="contentrow" id="playingArea">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">        
+        <div id="player1">
+            <h3 id="player1-name">Player1</h3>
+            <ul>
+            </ul>
+            <div id="player1-chosen"></div>
+            <div class="outcomes">
+                <div class="outcome-trackers" id="player1-wins"></div>
+                <div class="outcome-trackers" id="player1-losses"></div>
             </div>
-      </div>
-      <div class="contentrow" id="buttons">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-2">
-                <button class="bn" onclick="" value=""><i class="fas fa-user-ninja"></i></button>
-                <button class="bn" onclick="" value=""><i class="fas fa-hat-cowboy-side"></i></button>
-                <button class="bn" onclick="" value=""><i class="fas fa-dragon"></i></button>
+        </div>
+            
+        <div id="player2">
+            <h3 id="player2-name">Player2</h3>
+            <ul>
+            </ul>
+            <div id="player2-chosen"></div>
+            <div class="outcomes">
+                <div class="outcome-trackers" id="player2-wins"></div>
+                <div class="outcome-trackers" id="player2-losses"></div>
             </div>
-      </div>
-      <div class="challengerow">
-            <div class="col-xs-12 col-sm-12 col-md-10 offset=md-1 col-lg-10 offset-lg-4">
-                    <div id="chatbox"></div>
-                    <form id="messageBar">
-                        <input id="messageBox" type="text" />
-                        <button id="taunt" type="submit">Taunt</button>
-                    </form>
-      </div>
-
+        </div>
+        <div id="result"></div>
+    </div>
+    </div>        
+    </div>
+        <div class="challengerow">
+        <div class="col-xs-12 col-sm-12 col-md-10 offset=md-1 col-lg-10 offset-lg-1">    
+            <div id="chat">
+                <div id="chat-messages"></div>
+                    <div id="chat-bar">
+                        <input id="chat-input" />
+                        <button id="chat-send">Smack</button>
+                    </div>
+            </div>
+        </div>
+        </div>
+            
+    </div>
     <!-- Optional JavaScript -->
     <script src="https://kit.fontawesome.com/67a153827f.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="bnc.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
